@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+
+
 *, *:after, *:before {
     margin: 0;
     padding: 0;
@@ -15,18 +17,28 @@ hr {
   margin-bottom: 1em;
 }
 
+h1 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
 h4 {
   margin-bottom: 0;
+  font-weight: lighter;
+  font-size: 15px;
 }
 
 img {
   width: auto;
   max-width: 100%;
   height: auto !important;
-}
-
-.row {
-  margin: 0 0 3em 0;
 }
 
 .wrapper {
@@ -43,86 +55,91 @@ span {
   font-weight: normal;
 }
 
-.column-3 > div {
-  height: 125px;
+.swatch {
+  height: 150px;
   margin-bottom: 1em;
 }
 
-.mint {
-  background: $mint;
+.swatch-small {
+  height: 40px;
+  margin-bottom: 1em;
 }
 
-.mint-lighter {
-  background: lighten($mint, $amount);
-  height: 125px;
-}
-
-.mint-darker {
-  background: darken($mint, $amount);
-  height: 125px;
-}
-
-.teal-lighter {
-  background: lighten($teal, $amount);
-  height: 125px;
-}
-
-.teal-darker {
-  background: darken($teal, $amount);
-  height: 125px;
-}
-
-.gold-lighter {
-  background: lighten($gold, $amount);
-  height: 125px;
-}
-
-.gold-darker {
-  background: darken($gold, $amount);
-  height: 125px;
-}
-
-.tomato-lighter {
-  background: lighten($tomato, $amount);
-  height: 125px;
-}
-
-.tomato-darker {
-  background: darken($tomato, $amount);
-  height: 125px;
-}
-
-.teal {
-  background: $teal;
-}
-
-.gold {
-  background: $gold;
-}
-
-.tomato {
-  background: $tomato;
-}
-
-.mint-mix, .teal-mix, .gold-mix, .tomato-mix {
-  height: 30px;
-}
-
-.mint-mix {
-  background: mix($mint, $mint, $weight);
-}
-
-.teal-mix {
-  background: mix($mint, $teal, $weight);
-}
-
-.gold-mix {
-  background: mix($mint, $gold, $weight);
-}
-
-.tomato-mix {
-  background: mix($mint, $tomato, $weight);
-}
+// .mint {
+//   background: $mint;
+// }
+//
+// .mint-lighter {
+//   background: lighten($mint, $amount);
+//   height: 125px;
+// }
+//
+// .mint-darker {
+//   background: darken($mint, $amount);
+//   height: 125px;
+// }
+//
+// .teal-lighter {
+//   background: lighten($teal, $amount);
+//   height: 125px;
+// }
+//
+// .teal-darker {
+//   background: darken($teal, $amount);
+//   height: 125px;
+// }
+//
+// .gold-lighter {
+//   background: lighten($gold, $amount);
+//   height: 125px;
+// }
+//
+// .gold-darker {
+//   background: darken($gold, $amount);
+//   height: 125px;
+// }
+//
+// .tomato-lighter {
+//   background: lighten($tomato, $amount);
+//   height: 125px;
+// }
+//
+// .tomato-darker {
+//   background: darken($tomato, $amount);
+//   height: 125px;
+// }
+//
+// .teal {
+//   background: $teal;
+// }
+//
+// .gold {
+//   background: $gold;
+// }
+//
+// .tomato {
+//   background: $tomato;
+// }
+//
+// .mint-mix, .teal-mix, .gold-mix, .tomato-mix {
+//   height: 30px;
+// }
+//
+// .mint-mix {
+//   background: mix($mint, $mint, $weight);
+// }
+//
+// .teal-mix {
+//   background: mix($mint, $teal, $weight);
+// }
+//
+// .gold-mix {
+//   background: mix($mint, $gold, $weight);
+// }
+//
+// .tomato-mix {
+//   background: mix($mint, $tomato, $weight);
+// }
 
 .wrapper, .row {
   @extend %clearfix;

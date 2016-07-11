@@ -7,10 +7,92 @@ $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
 
 // color variables
-$mint: rgb(217, 245, 232);
-$teal: rgb(55, 203, 194);
-$gold: rgb(255, 187, 51);
-$tomato: rgb(255, 99, 71);
+$primary-color: #D9F5E8;
+$primary-color-name: 'Mint';
+$secondary-color: #37cbc2;
+$secondary-color-name: 'Teal';
+$tertiary-color: #fb3;
+$tertiary-color-name: 'Gold';
+$accent-color: #FF6347;
+$accent-color-name: 'Tomato';
 
 $amount: 10%;
 $weight: 65%;
+
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  tertiary: $tertiary-color,
+  accent: $accent-color
+);
+
+$color-names: (
+  primary: $primary-color-name,
+  secondary: $secondary-color-name,
+  tertiary: $tertiary-color-name,
+  accent: $accent-color-name
+);
+
+@each $color-type, $color-value in $colors {
+  .color-#{$color-type} .label-rgb:before {
+    content: '#{red($color-value)} / #{green($color-value)} / #{blue($color-value)}';
+  }
+
+  .color-#{$color-type} .label-hsl:before {
+    content: '#{round(hue($color-value))} / #{round(saturation($color-value))} / #{round(lightness($color-value))}';
+  }
+
+  .color-#{$color-type} .swatch {
+    background: $color-value;
+  }
+
+  .color-#{$color-type} .swatch-light {
+    background: lighten($color-value, $amount);
+  }
+
+  .color-#{$color-type} .swatch-dark {
+    background: darken($color-value, $amount);
+  }
+
+  .color-primary .mixed-with-#{$color-type} .swatch {
+    background: mix($color-value, $primary-color, $weight);
+  }
+
+  .color-secondary .mixed-with-#{$color-type} .swatch {
+    background: mix($color-value, $secondary-color, $weight);
+  }
+
+  .color-tertiary .mixed-with-#{$color-type} .swatch {
+    background: mix($color-value, $tertiary-color, $weight);
+  }
+
+  .color-accent .mixedwith-#{$color-type} .swatch {
+    background: mix($color-value, $accent-color, $weight);
+  }
+}
+
+@each $color-type, $color-name-value in $color-names {
+  .color-#{$color-type} .label-name:before,
+  .color-#{$color-type} h3.subheader:before {
+    content: '#{$color-name-value}';
+  }
+}
+
+// $primary-font: Open Sans;
+// $accent-font: Bree Serif;
+
+.mixed-with-primary h4:before {
+  content: "Mixed with #{$weight} #{$primary-color-name}";
+}
+
+.mixed-with-secondary h4:before {
+  content: "Mixed with #{$weight} #{$secondary-color-name}";
+}
+
+.mixed-with-tertiary h4:before {
+  content: "Mixed with #{$weight} #{$tertiary-color-name}";
+}
+
+.mixed-with-accent h4:before {
+  content: "Mixed with #{$weight} #{$accent-color-name}";
+}

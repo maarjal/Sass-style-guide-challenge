@@ -1,3 +1,139 @@
+.color-primary .label-rgb:before {
+  content: "217 / 245 / 232"; }
+
+.color-primary .label-hsl:before {
+  content: "152deg / 58% / 91%"; }
+
+.color-primary .swatch {
+  background: #D9F5E8; }
+
+.color-primary .swatch-light {
+  background: white; }
+
+.color-primary .swatch-dark {
+  background: #b1ead0; }
+
+.color-primary .mixed-with-primary .swatch {
+  background: #d9f5e8; }
+
+.color-secondary .mixed-with-primary .swatch {
+  background: #a0e6db; }
+
+.color-tertiary .mixed-with-primary .swatch {
+  background: #e6e1a9; }
+
+.color-accent .mixedwith-primary .swatch {
+  background: #e6c2b0; }
+
+.color-secondary .label-rgb:before {
+  content: "55 / 203 / 194"; }
+
+.color-secondary .label-hsl:before {
+  content: "176deg / 59% / 51%"; }
+
+.color-secondary .swatch {
+  background: #37cbc2; }
+
+.color-secondary .swatch-light {
+  background: #5fd6ce; }
+
+.color-secondary .swatch-dark {
+  background: #2ba49d; }
+
+.color-primary .mixed-with-secondary .swatch {
+  background: #70dacf; }
+
+.color-secondary .mixed-with-secondary .swatch {
+  background: #37cbc2; }
+
+.color-tertiary .mixed-with-secondary .swatch {
+  background: #7dc590; }
+
+.color-accent .mixedwith-secondary .swatch {
+  background: #7da797; }
+
+.color-tertiary .label-rgb:before {
+  content: "255 / 187 / 51"; }
+
+.color-tertiary .label-hsl:before {
+  content: "40deg / 100% / 60%"; }
+
+.color-tertiary .swatch {
+  background: #fb3; }
+
+.color-tertiary .swatch-light {
+  background: #ffcc66; }
+
+.color-tertiary .swatch-dark {
+  background: #ffaa00; }
+
+.color-primary .mixed-with-tertiary .swatch {
+  background: #f2cf72; }
+
+.color-secondary .mixed-with-tertiary .swatch {
+  background: #b9c165; }
+
+.color-tertiary .mixed-with-tertiary .swatch {
+  background: #ffbb33; }
+
+.color-accent .mixedwith-tertiary .swatch {
+  background: #ff9c3a; }
+
+.color-accent .label-rgb:before {
+  content: "255 / 99 / 71"; }
+
+.color-accent .label-hsl:before {
+  content: "9deg / 100% / 64%"; }
+
+.color-accent .swatch {
+  background: #FF6347; }
+
+.color-accent .swatch-light {
+  background: #ff8e7a; }
+
+.color-accent .swatch-dark {
+  background: #ff3814; }
+
+.color-primary .mixed-with-accent .swatch {
+  background: #f2967f; }
+
+.color-secondary .mixed-with-accent .swatch {
+  background: #b98772; }
+
+.color-tertiary .mixed-with-accent .swatch {
+  background: #ff8240; }
+
+.color-accent .mixedwith-accent .swatch {
+  background: tomato; }
+
+.color-primary .label-name:before,
+.color-primary h3.subheader:before {
+  content: "Mint"; }
+
+.color-secondary .label-name:before,
+.color-secondary h3.subheader:before {
+  content: "Teal"; }
+
+.color-tertiary .label-name:before,
+.color-tertiary h3.subheader:before {
+  content: "Gold"; }
+
+.color-accent .label-name:before,
+.color-accent h3.subheader:before {
+  content: "Tomato"; }
+
+.mixed-with-primary h4:before {
+  content: "Mixed with 65% Mint"; }
+
+.mixed-with-secondary h4:before {
+  content: "Mixed with 65% Teal"; }
+
+.mixed-with-tertiary h4:before {
+  content: "Mixed with 65% Gold"; }
+
+.mixed-with-accent h4:before {
+  content: "Mixed with 65% Tomato"; }
+
 .wrapper, .row {
   *zoom: 1; }
   .wrapper:before, .row:before, .wrapper:after, .row:after {
@@ -19,16 +155,25 @@ body {
 hr {
   margin-bottom: 1em; }
 
+h1 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-size: 25px; }
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 20px; }
+
 h4 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-size: 15px; }
 
 img {
   width: auto;
   max-width: 100%;
   height: auto !important; }
-
-.row {
-  margin: 0 0 3em 0; }
 
 .wrapper {
   width: 100%;
@@ -41,68 +186,13 @@ span {
   float: right;
   font-weight: normal; }
 
-.column-3 > div {
-  height: 125px;
+.swatch {
+  height: 150px;
   margin-bottom: 1em; }
 
-.mint {
-  background: #d9f5e8; }
-
-.mint-lighter {
-  background: white;
-  height: 125px; }
-
-.mint-darker {
-  background: #b1ead0;
-  height: 125px; }
-
-.teal-lighter {
-  background: #5fd6ce;
-  height: 125px; }
-
-.teal-darker {
-  background: #2ba49d;
-  height: 125px; }
-
-.gold-lighter {
-  background: #ffcc66;
-  height: 125px; }
-
-.gold-darker {
-  background: #ffaa00;
-  height: 125px; }
-
-.tomato-lighter {
-  background: #ff8e7a;
-  height: 125px; }
-
-.tomato-darker {
-  background: #ff3814;
-  height: 125px; }
-
-.teal {
-  background: #37cbc2; }
-
-.gold {
-  background: #ffbb33; }
-
-.tomato {
-  background: tomato; }
-
-.mint-mix, .teal-mix, .gold-mix, .tomato-mix {
-  height: 30px; }
-
-.mint-mix {
-  background: #d9f5e8; }
-
-.teal-mix {
-  background: #a0e6db; }
-
-.gold-mix {
-  background: #e6e1a9; }
-
-.tomato-mix {
-  background: #e6c2b0; }
+.swatch-small {
+  height: 40px;
+  margin-bottom: 1em; }
 
 [class*='column-'] {
   float: left;
