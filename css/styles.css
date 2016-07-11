@@ -1,0 +1,139 @@
+.wrapper, .row {
+  *zoom: 1; }
+  .wrapper:before, .row:before, .wrapper:after, .row:after {
+    content: "";
+    display: table; }
+  .wrapper:after, .row:after {
+    clear: both; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+hr {
+  margin-bottom: 1em; }
+
+h4 {
+  margin-bottom: 0; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.row {
+  margin: 0 0 3em 0; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.column-3 p {
+  font-weight: bold; }
+
+span {
+  float: right;
+  font-weight: normal; }
+
+.column-3 > div {
+  height: 125px;
+  margin-bottom: 1em; }
+
+.mint {
+  background: #d9f5e8; }
+
+.mint-lighter {
+  background: white;
+  height: 125px; }
+
+.mint-darker {
+  background: #b1ead0;
+  height: 125px; }
+
+.teal-lighter {
+  background: #5fd6ce;
+  height: 125px; }
+
+.teal-darker {
+  background: #2ba49d;
+  height: 125px; }
+
+.gold-lighter {
+  background: #ffcc66;
+  height: 125px; }
+
+.gold-darker {
+  background: #ffaa00;
+  height: 125px; }
+
+.tomato-lighter {
+  background: #ff8e7a;
+  height: 125px; }
+
+.tomato-darker {
+  background: #ff3814;
+  height: 125px; }
+
+.teal {
+  background: #37cbc2; }
+
+.gold {
+  background: #ffbb33; }
+
+.tomato {
+  background: tomato; }
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 30em) {
+  .wrapper {
+    width: 95%;
+    max-width: 65em; }
+
+  .column-1 {
+    width: 8.33333%; }
+
+  .column-2 {
+    width: 16.66667%; }
+
+  .column-3 {
+    width: 25%; }
+
+  .column-4 {
+    width: 33.33333%; }
+
+  .column-5 {
+    width: 41.66667%; }
+
+  .column-6 {
+    width: 50%; }
+
+  .column-7 {
+    width: 58.33333%; }
+
+  .column-8 {
+    width: 66.66667%; }
+
+  .column-9 {
+    width: 75%; }
+
+  .column-10 {
+    width: 83.33333%; }
+
+  .column-11 {
+    width: 91.66667%; }
+
+  .column-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

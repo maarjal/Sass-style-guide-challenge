@@ -1,0 +1,128 @@
+@import "variables";
+@import "mixins";
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+    }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  margin-bottom: 1em;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.row {
+  margin: 0 0 3em 0;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column-3 p {
+  font-weight: bold;
+}
+
+span {
+  float: right;
+  font-weight: normal;
+}
+
+.column-3 > div {
+  height: 125px;
+  margin-bottom: 1em;
+}
+
+.mint {
+  background: $mint;
+}
+
+.mint-lighter {
+  background: lighten($mint, $amount);
+  height: 125px;
+}
+
+.mint-darker {
+  background: darken($mint, $amount);
+  height: 125px;
+}
+
+.teal-lighter {
+  background: lighten($teal, $amount);
+  height: 125px;
+}
+
+.teal-darker {
+  background: darken($teal, $amount);
+  height: 125px;
+}
+
+.gold-lighter {
+  background: lighten($gold, $amount);
+  height: 125px;
+}
+
+.gold-darker {
+  background: darken($gold, $amount);
+  height: 125px;
+}
+
+.tomato-lighter {
+  background: lighten($tomato, $amount);
+  height: 125px;
+}
+
+.tomato-darker {
+  background: darken($tomato, $amount);
+  height: 125px;
+}
+
+.teal {
+  background: $teal;
+}
+
+.gold {
+  background: $gold;
+}
+
+.tomato {
+  background: $tomato;
+}
+
+.wrapper, .row {
+  @extend %clearfix;
+}
+
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+}
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
