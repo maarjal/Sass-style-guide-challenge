@@ -104,6 +104,26 @@ span {
   background: $tomato;
 }
 
+.mint-mix, .teal-mix, .gold-mix, .tomato-mix {
+  height: 30px;
+}
+
+.mint-mix {
+  background: mix($mint, $mint, $weight);
+}
+
+.teal-mix {
+  background: mix($mint, $teal, $weight);
+}
+
+.gold-mix {
+  background: mix($mint, $gold, $weight);
+}
+
+.tomato-mix {
+  background: mix($mint, $tomato, $weight);
+}
+
 .wrapper, .row {
   @extend %clearfix;
 }

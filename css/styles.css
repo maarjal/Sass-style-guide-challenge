@@ -89,6 +89,21 @@ span {
 .tomato {
   background: tomato; }
 
+.mint-mix, .teal-mix, .gold-mix, .tomato-mix {
+  height: 30px; }
+
+.mint-mix {
+  background: #d9f5e8; }
+
+.teal-mix {
+  background: #a0e6db; }
+
+.gold-mix {
+  background: #e6e1a9; }
+
+.tomato-mix {
+  background: #e6c2b0; }
+
 [class*='column-'] {
   float: left;
   padding: 1em;
